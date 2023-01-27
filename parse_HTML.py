@@ -18,6 +18,6 @@ thumbnail_url = list(map(lambda x:x.thumbnail_url,urls))
 with open('last.csv', 'w') as f:
     # Create a CSV writer
     writer = csv.writer(f)
-    # Write the dates and times to the .csv file
+    # Write the tiltes, Embed_links, shorts(Y/N), keywords(tags)... to the .csv file
     writer.writerow(['Titles', 'Embed Links', 'Shorts', 'Keywords'])
     writer.writerows(zip(Titles, Embed_Links, booleans, Keywords))
